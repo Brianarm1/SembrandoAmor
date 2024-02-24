@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(/assets/img/fondo.jpg);
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,39 +17,39 @@ nav{
 }
 
 
-#logo-nav{
+#logo-nav {
     color: rgb(64, 113, 68);
     font-size: 40px;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 10px 3px 8px  rgb(157, 177, 159);
+    box-shadow: 10px 3px 8px rgb(157, 177, 159);
 }
 
-ul li{
+ul li {
     display: inline-block;
-    padding: 0px 20px;    
+    padding: 0px 20px;
 }
 
-ul a{
+ul a {
     color: rgb(64, 113, 68);
     text-decoration: none;
     font-size: 25px;
 }
 
-ul li:hover{
+ul li:hover {
     transform: scale(1.1);
     transition: all 0.4s ease;
 }
 
-ul a:hover{
-   color: rgb(95, 130, 100);
+ul a:hover {
+    color: rgb(95, 130, 100);
 
 }
 
 
-#cartas:hover{
-  
-    box-shadow: 10px 5px 5px  rgb(196, 208, 197) ;
+#cartas:hover {
+
+    box-shadow: 10px 5px 5px rgb(196, 208, 197);
     cursor: pointer;
     transform: scale(1.02);
     transition: all 0.8s ease;
