@@ -49,9 +49,12 @@ ul a:hover{
 
 #cartas:hover{
   
-    border-radius: 15px;
     box-shadow: 10px 5px 5px  rgb(196, 208, 197) ;
     cursor: pointer;
     transform: scale(1.02);
     transition: all 0.8s ease;
+}
+
+.contaimer-git {
+    margin-bottom: 10px;
 }
