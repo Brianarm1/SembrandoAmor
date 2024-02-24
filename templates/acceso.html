@@ -16,31 +16,31 @@
                         Registrar
                     </h2>
                     <div class="mb-5">
-                        <label for="username" class="block mb-2 text-sm text-gray-600">Nombre de usuario</label>
-                        <input type="text" id="username"
+                        <label for="email-reg" class="block mb-2 text-sm text-gray-600">Correo electronico:</label>
+                        <input type="text" id="email-reg"
                             class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required />
                     </div>
                     <div class="mb-5">
-                        <label for="password" class="block mb-2 text-sm text-gray-600">Contraseña</label>
-                        <input type="password" id="password"
+                        <label for="password-reg" class="block mb-2 text-sm text-gray-600">Contraseña:</label>
+                        <input type="password" id="password-reg"
                             class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required />
                     </div>
                     <div class="mb-5">
                         <label for="password-check" class="d-flex mb-2 text-sm text-gray-600">Verifica la
-                            contraseña</label>
+                            contraseña:</label>
                         <input type="password" id="password-check"
                             class="d-flex w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required />
                     </div>
-                    <div class="mb-5  d-flex flex-nowrap">
-                        <label for="terms" class="text-sm text-gray-600">
+                    <div class="mb-5  d-flex flex-nowrap justify-content-start p-3">
+                        <input type="checkbox" id="terms" class="mx-3" required/>
+                        <label for="terms" class="text-sm text-gray-600" onclick="terms()">
                             Acepto el tratamiento de mis datos personales de acuerdo a la
-                            <a href="#">política de privacidad</a>.</label>
-                        <input type="checkbox" id="terms" class="m-4" required />
+                            <a href="#">política de privacidad</a></label>
                     </div>
-                    <button type="submit" class="w-full p-3 mt-4 bg-indigo-600 text-white rounded shadow">
+                    <button id="btn-reg" type="submit" class="w-full p-3 mt-4 bg-indigo-600 text-white rounded shadow">
                         Registrate
                     </button>
                 </form>
@@ -49,14 +49,14 @@
                         Acceder
                     </h2>
                     <div class="mb-5">
-                        <label for="username" class="block mb-2 text-sm text-gray-600">Nombre de usuario</label>
-                        <input type="text" id="username"
+                        <label for="email-log" class="block mb-2 text-sm text-gray-600">Correo electronico:</label>
+                        <input type="text" id="email-log"
                             class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required />
                     </div>
                     <div class="mb-5">
-                        <label for="password" class="block mb-2 text-sm text-gray-600">Contraseña</label>
-                        <input type="password" id="password"
+                        <label for="password-log" class="block mb-2 text-sm text-gray-600">Contraseña</label>
+                        <input type="password" id="password-log"
                             class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required />
                     </div>
