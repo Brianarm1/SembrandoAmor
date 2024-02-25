@@ -1,0 +1,265 @@
+{% extends "layout.html" %}
+{% block body %}
+<main>
+    <section id="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{url_for ('static',filename='img/banner1.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Flora</h5>
+                        <p>
+                            La flora en Colombia es tan variada que se estima que de las 300mil especies de planta que
+                            hay en el
+                            mundo, más de 40mil de ellas están en Colombia; un poco más del 13%.<br>
+                            Colombia cuenta con más de 1.500 especies de plantas endémicas, es el primer país en el
+                            mundo con mayor
+                            variedad de orquídeas; y el tercero con mayor variedad de palmas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for ('static',filename='img/banner2.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Colombia</h5>
+                        <p>Colombia tiene 311 tipos de ecosistemas costeros y continentale, 59 áreas protegidas
+                            designadas a nivel
+                            nacional, Colombia es el país del mundo con mayor territorios de páramos;de hecho, mas del
+                            60% del
+                            ecosistema andino colombiano está clasificado como páramo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for ('static',filename='img/banner3.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Biodiversidad</h5>
+                        <p>La fauna en Colombia es uno de los aspectos que hace que Colombia sea una pais megadiverso y
+                            magico.<br>
+                            De las especies mas representativas en Colombia son los frailejones, magnolias, palmas,
+                            bromelias,
+                            cactus, pinos, helechos y manglares.
+                            La flora más comercial son las rosas, crisantenos, claveles, lirios y hortensias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="descripcion">
+        <div class="container-fluid p-5 ">
+            <div class="row justify-content-center my-3 text-center">
+                <div class="col m-5">
+                    <h3 id="¿quienes somos?"> ¿Quienes somos? </h3>
+                    <p>
+                        Sembrando Amor es una asociación sin ánimo de lucro, la cual busca aportar un granito de arena
+                        al mundo,
+                        donde se busca y promueve el cuidado del medio ambiente mediante la siembra de árboles, cuidado
+                        de la
+                        fauna, concientización de la sociedad con respeto al cuidado de la naturaleza y todos los
+                        animales que
+                        habitan en ella. Sembrando Amor lleva mas de 15 años ayudando a reforestar y recuperar la
+                        naturaleza que
+                        el ser humano ha lastimado tanto, y todo esto se ha logrado gracias a la gran comunidad a nivel
+                        global que
+                        conforman a esta familia de sembradores de amor que hay por todo el mundo haciendo el cambio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="row justify-content-center mx-3 my-2 text-center pb-5">
+        <h3> Servicios</h3>
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" id="cartas">
+            <div class="card h-100" class="mx-auto d-block w-25">
+                <img src="{{url_for ('static',filename='img/card1.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title row justify-content-center">Siembra</h5>
+                    <p class="card-text">En Sembrando Amor nos moveos por la siembra y reforestación de espacios
+                        previamente
+                        afectados por quemas inescuprulosas y tala ilegal de los arboles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" id="cartas">
+            <div class="card h-100">
+                <img src="{{url_for ('static',filename='img/card2.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title row justify-content-center"> Venta de semillas </h5>
+                    <p class="card-text"> Tenemos gran variedad de semillas para todo tipo de ecosistemas, prestando un
+                        asesoramiento personalizado, en el caul ayudamos a anilzar la zona y su afectacion para poder
+                        sembrar
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" id="cartas">
+            <div class="card h-100">
+                <img src="{{url_for ('static',filename='img/card3.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title row justify-content-center ">Analisis de tierras</h5>
+                    <p class="card-text"> Mediante sofisticados equipos prestamos el mejor servicio de analisis de
+                        tierra, con
+                        el cual podemos determinar la fertilidad de dicho suelo y poder brindar la mejor solución</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analisis">
+        <div class="container-fluid mb-5">
+            <div class="row justify-content-around text-center">
+                <div class="col-sm-12 col-md-8 col-lg-5 border border-end shadow align-top mt-sm-4 mb-sm-3">
+                    <h4 class="py-4">Resultados</h4>
+                    <img src="{{url_for ('static',filename='img/folder.png')}}" alt="tablas"
+                        class="mx-auto d-block w-25 pb-2">
+                    <section class="my-4">
+                        <ul class="nav nav-tabs m-3 justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Arboles Sembrados en
+                                    Medellín</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Siembra mayor a 60
+                                    arboles en El Bagre</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Vereda Las
+                                    Cruces</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="mina-tab" data-bs-toggle="tab"
+                                    data-bs-target="#mina-tab-pane" type="button" role="tab"
+                                    aria-controls="mina-tab-pane" aria-selected="false">Vereda Mina
+                                    Vieja</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                    data-bs-target="#pasoreal-tab-pane" type="button" role="tab"
+                                    aria-controls="disabled-tab-pane" aria-selected="false">Vereda Paso
+                                    Real</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tonusco-tab-pane" type="button" role="tab"
+                                    aria-controls="disabled-tab-pane" aria-selected="false">Vereda Tonusco
+                                    Arriba</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                    data-bs-target="#siembras-tab-pane" type="button" role="tab"
+                                    aria-controls="disabled-tab-pane" aria-selected="false">Siembras de las
+                                    ciudades</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/ArbolesSembradosEnMedellin.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/FiltroElBagre.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/FiltroLasCruces.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="mina-tab-pane" role="tabpanel" aria-labelledby="mina-tab"
+                                tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/ArbolesSembradosEnMedellin.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="pasoreal-tab-pane" role="tabpanel"
+                                aria-labelledby="pasoreal-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/FiltroVeredaPasoReal.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="tonusco-tab-pane" role="tabpanel"
+                                aria-labelledby="tonusco-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/FiltroVeredaTonuscoArriba.html')}}"
+                                    frameborder="0" class="w-100" height="300"></iframe>
+                            </div>
+                            <div class="tab-pane fade p-3" id="siembras-tab-pane" role="tabpanel"
+                                aria-labelledby="siembras-tab" tabindex="0">
+                                <iframe src="{{url_for ('static',filename='tables/siembras.html')}}" frameborder="0"
+                                    class="w-100" height="300"></iframe>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-5 border border-end shadow align-top mt-sm-4 mb-sm-3">
+                    <h4 class="py-4"> Graficas </h4>
+                    <img src="{{url_for ('static',filename='img/data-analyst.png')}}" alt="tablas"
+                        class="img img-fluid mx-auto d-block w-25 mb-4">
+                    <ul class="nav nav-tabs mx-5 mt-3 justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                data-bs-target="#siembrasmayoresa50000-tab-pane" type="button" role="tab"
+                                aria-controls="disabled-tab-pane" aria-selected="false">Ciudades con siembras mayores a
+                                50.000
+                                arboles</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                data-bs-target="#veredasconmayorsiembra-tab-pane" type="button" role="tab"
+                                aria-controls="disabled-tab-pane" aria-selected="false"> Veredas con mas de 45.000
+                                siembras</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                data-bs-target="#veredasconmashectareas-tab-pane" type="button" role="tab"
+                                aria-controls="disabled-tab-pane" aria-selected="false"> Veredas con la mayor cantidad
+                                de
+                                hectareas</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="siembrasmayoresa50000-tab-pane" role="tabpanel"
+                            aria-labelledby="siembrasmayoresa50000-tab" tabindex="0">
+                            <img src="{{url_for ('static',filename='graphs/siembramayoresa50000.png')}}" frameborder="0"
+                                class="img img-fluid w-85 ratio ratio-1x1"></img>
+                        </div>
+                        <div class="tab-pane fade" id="veredasconmayorsiembra-tab-pane" role="tabpanel"
+                            aria-labelledby="veredasconmayorsiembra-tab" tabindex="0">
+                            <img src="{{url_for ('static',filename='graphs/veredasConMayorSiembra.png')}}"
+                                frameborder="0" class="img img-fluid w-100 ratio ratio-1x1"></img>
+                        </div>
+                        <div class="tab-pane fade" id="veredasconmashectareas-tab-pane" role="tabpanel"
+                            aria-labelledby="veredasconmashectareas-tab" tabindex="0">
+                            <img src="{{url_for ('static',filename='graphs/veredasConMasHectareas.png')}}"
+                                frameborder="0" class="img img-fluid w-100 ratio ratio-1x1"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
