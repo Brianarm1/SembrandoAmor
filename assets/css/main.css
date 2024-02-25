@@ -2,8 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(/assets/img/fondo.jpg);
+main {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
@@ -17,44 +20,21 @@ nav {
 }
 
 
-#logo-nav {
-    color: rgb(64, 113, 68);
-    font-size: 40px;
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: 10px 3px 8px rgb(157, 177, 159);
-}
-
-ul li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-ul a {
-    color: rgb(64, 113, 68);
-    text-decoration: none;
-    font-size: 25px;
-}
-
-ul li:hover {
-    transform: scale(1.1);
-    transition: all 0.4s ease;
-}
-
-ul a:hover {
-    color: rgb(95, 130, 100);
-
+#logo {
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
+    max-height: 50px;
+    margin: 5px auto;
 }
 
 
-#cartas:hover {
-
+.card:hover {
     box-shadow: 10px 5px 5px rgb(196, 208, 197);
     cursor: pointer;
     transform: scale(1.02);
     transition: all 0.8s ease;
 }
 
-.contaier-git {
+.container-git {
     margin-bottom: 10px;
 }
