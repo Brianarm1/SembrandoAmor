@@ -19,14 +19,12 @@ nav {
     font-weight: bold;
 }
 
-
 #logo {
     border-start-end-radius: 10px;
     border-end-end-radius: 10px;
-    max-height: 50px;
+    max-height: 55px;
     margin: 5px auto;
 }
-
 
 .card:hover {
     box-shadow: 10px 5px 5px rgb(196, 208, 197);
