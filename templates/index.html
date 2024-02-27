@@ -1,5 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
+
+
+
 <main>
     <section id="carrusel">
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -64,7 +67,7 @@
         </div>
     </section>
     <section id="descripcion">
-        <div class="container-fluid p-5 bg-light-subtle">
+        <div class="container-fluid p-3 bg-light-subtle">
             <div class="row justify-content-center my-3 text-center">
                 <div class="col m-5">
                     <h3 id="quienes"> ¿Quienes somos? </h3>
@@ -84,6 +87,28 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid p-3 bg-light-subtle">
+            <div class="row justify-content-center my-3 text-center">
+                <div class="col m-5">
+                    <h3 id="quienes"> Misión </h3>
+                    <p>
+                        En nuestra empresa sin ánimos de lucro, nos comprometemos a liderar la iniciativa global de reforestación de fauna, trabajando incansablemente para restaurar ecosistemas vitales y preservar la diversidad biológica. A través de servicios integrales de análisis de tierra, venta de semillas y siembra, buscamos crear un impacto duradero que revitalice hábitats naturales y contribuya al equilibrio ambiental. Nos esforzamos por inspirar a individuos, comunidades y organizaciones a unirse a nosotros en la construcción de un futuro sostenible para las generaciones venideras.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-3 bg-light-subtle">
+            <div class="row justify-content-center my-3 text-center">
+                <div class="col m-5">
+                    <h3 id="quienes"> Visión </h3>
+                    <p>
+                        Visualizamos un mundo en el que la biodiversidad florece, los ecosistemas se regeneran y la armonía entre la humanidad y la naturaleza se restablece. Buscamos ser pioneros en la transformación positiva de paisajes degradados, fomentando la coexistencia pacífica entre todas las formas de vida. A medida que expandimos nuestra red global, aspiramos a convertirnos en un catalizador para la conciencia ambiental y la acción colectiva, empoderando a las comunidades para que se conviertan en guardianes responsables de nuestro planeta.                     
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="servicios" class="row justify-content-center mx-3 my-2 text-center pb-5">
@@ -99,14 +124,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4">
-            <div class="card h-100 d-block">
-                <img src="{{url_for ('static',filename='img/card2.jpg')}}" class="card-img-top" alt="">
+
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" >
+            <div class="card h-100">
+                <img src="{{url_for ('static',filename='img/card2.jpg')}}" class="card-img-top" alt="" href="{{url_for('productos')}}" >
+
                 <div class="card-body">
                     <h5 class="card-title row justify-content-center"> Venta de semillas </h5>
                     <p class="card-text"> Tenemos gran variedad de semillas para todo tipo de ecosistemas, prestando un
-                        asesoramiento personalizado, en el caul ayudamos a anilzar la zona y su afectacion para poder
-                        sembrar
+                        asesoramiento personalizado, en el caul ayudamos a analizar la zona y su afectación para poder
+                        sembrar.
                     </p>
                 </div>
             </div>
@@ -118,7 +145,7 @@
                     <h5 class="card-title row justify-content-center ">Analisis de tierras</h5>
                     <p class="card-text"> Mediante sofisticados equipos prestamos el mejor servicio de analisis de
                         tierra, con
-                        el cual podemos determinar la fertilidad de dicho suelo y poder brindar la mejor solución</p>
+                        el cual podemos determinar la fertilidad de dicho suelo y poder brindar la mejor solución.</p>
                 </div>
             </div>
         </div>
@@ -261,5 +288,8 @@
             </div>
         </div>
     </section>
+
 </main>
+
+
 {% endblock %}

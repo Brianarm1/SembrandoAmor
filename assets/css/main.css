@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-acento: #ee6130;
+    --color-acento-claro:#ee613033;
+    --color-texto: black;
+}
+
 main {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
@@ -27,7 +33,7 @@ nav {
 }
 
 .card:hover {
-    box-shadow: 10px 5px 5px rgb(196, 208, 197);
+    box-shadow: 10px 5px 5px rgb(207, 213, 207);
     cursor: pointer;
     transform: scale(1.02);
     transition: all 0.8s ease;
@@ -36,3 +42,48 @@ nav {
 .container-git {
     margin-bottom: 10px;
 }
+
+/*Productos*/
+
+.price{
+    font-size: 22px;
+    color: black;
+}
+
+.comprar{
+    background-color:  rgb(244, 199, 64);
+    border-radius: 15px;
+    padding: 7px;
+    font-size: 22px;
+    color: rgb(67, 66, 66);
+}
+
+.carrito{
+    max-height: 70px;
+    margin: 5px auto;
+    margin-right: 70px;
+    
+}
+
+
+
+#cuenta-carrito {
+    text-decoration: none;
+    background-color:var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    
+}
+
+/*productos 2*/
+
+
+
+
+
+
+
