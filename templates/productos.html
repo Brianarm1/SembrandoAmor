@@ -1,17 +1,101 @@
-{% extends "layout.html" %} 
+{% extends "layout.html" %}
 {% block body %}
 
-
-
-  <main>
-
-  <section id="productos-container">
-   
-
-  </section>
-
-  
-
-  </main>
+<main>
+  <div id="productos-container" class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="1">
+          <img src="{{url_for ('static',filename='img/imgproduto/semilla-ceiba_bonga.jpg')}}">
+          <h3 class="nombre">Semillas de árbol Ceiba Bonga</h3>
+          <p class="descripcion">llamado comúnmente ceiba, ceibo, pochote o huimba, es un árbol de la familia Malvaceae.
+            En algunas zonas al árbol y la fibra que se obtiene de las semillas se les llama en inglés como kapok,
+            nombre derivado del malayo que originalmente se aplicaba a Bombax ceiba, nativo de Asia tropical.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$20000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="2">
+          <img src="{{url_for ('static',filename='img/imgproduto/semillas-arbol-saman.avif')}}">
+          <h3 class="nombre">Semillas de árbol Samán</h3>
+          <p class="descripcion">Samanea saman, también conocido como árbol de la lluvia, campano, cenízaro, cenícero,
+            couji de Caracas,​samán, tamarindo, es una especie botánica de árbol de hasta 20 m, con un dosel alto y
+            ancho, de grandes y simétricas coronas. Pertenece a la familia de las Fabaceae (orden Fabales​).</p>
+          <p class="price">Precio:</p>
+          <p class="value">$25000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="3">
+          <img src="{{url_for ('static',filename='img/imgproduto/semilla-de-arbol-balso.webp')}}">
+          <h3 class="nombre">Semillas de árbol Balso</h3>
+          <p class="descripcion">Ochroma pyramidale, conocida como balsa, madera de balso o guaguaripo, es un árbol de
+            la familia Malvaceae. Es la única especie del género monotípico Ochroma y es nativa de México, Suramérica y
+            el Caribe.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$24000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="4">
+          <img src="{{url_for ('static',filename='img/imgproduto/semillas-de-arbol-algarrobo.jpg')}}">
+          <h3 class="nombre">Semillas de arbol Algarrobo</h3>
+          <p class="descripcion">Los algarrobos son árboles de tamaño mediano a grande, con alturas que varían entre los
+            5 y los 15 metros, dependiendo de la especie y las condiciones de crecimiento. Poseen un tronco robusto y
+            ramas extendidas que forman una copa amplia y redondeada.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$30000</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="5">
+          <img src="{{url_for ('static',filename='img/imgproduto/semillas-de-mortiño.jpg')}}">
+          <h3 class="nombre">Semillas de Mortiño</h3>
+          <p class="descripcion">Es un especie arbustiva perteneciente a la familia Ericaceae, nativa de las zonas
+            montañosas andinas de Colombia, Venezuela, Ecuador​ y Perú</p>
+          <p class="price">Precio:</p>
+          <p class="value">$25000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="6">
+          <img src="{{url_for ('static',filename='img/imgproduto/semillas-arbol-neem.jpg')}}">
+          <h3 class="nombre">Semillas de árbol Neem</h3>
+          <p class="descripcion">Entre sus características principales se puede mencionar que tiene un espeso follaje,
+            el cual renueva durante todas las temporadas del año; no obstante en condiciones extremas puede llegar a
+            perder la totalidad de sus hojas.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$80000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="7">
+          <img src="{{url_for ('static',filename='img/imgproduto/semilla-tulipan-africano.jpg')}}">
+          <h3 class="nombre">Semillas de árbol Tulipan Africano</h3>
+          <p class="descripcion">Se trata de un árbol perenne y caducifolio que crece alrededor de 15 m, con un follaje
+            denso, copa compacta y globosa, hojas verde oscuro, compuestas e imparipinnadas. Posee flores de color
+            rojo-anaranjado muy vistosas, de forma acampanada y carnosas. Su fruto es dehiscente y tiene forma de
+            cápsula oblongo-elíptica, mientras que sus semillas aladas tienen forma de corazón.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$20000</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="tarjeta-producto" id="8">
+          <img src="{{url_for('static',filename='img/imgproduto/semillas-de-arbol-de-almendro.jpg')}}">
+          <h3 class="nombre">Semillas de árbol Almendro</h3>
+          <p class="descripcion">El almendro es un árbol que, en su edad adulta, cuenta con un tronco marrón de corteza
+            agrietada muy característico que alcanzar entre los tres y cinco metros de altura.Sus hojas son de tipo
+            lanceolado, largas, estrechas y puntiagudas de un verde intenso y salen tras la floración invernal.</p>
+          <p class="price">Precio:</p>
+          <p class="value">$98000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 {% endblock %}
