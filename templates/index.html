@@ -112,9 +112,9 @@
     </section>
 
     <section id="servicios" class="row justify-content-center mx-3 my-2 text-center pb-5">
-        <h3> Servicios</h3>
-        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" >
-            <div class="card h-100" class="mx-auto d-block w-25">
+        <h3 class="text-dark-emphasis bg-light-subtle"> Servicios</h3>
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4">
+            <div class="card h-100 d-block">
                 <img src="{{url_for ('static',filename='img/card1.jpg')}}" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title row justify-content-center">Siembra</h5>
@@ -124,9 +124,11 @@
                 </div>
             </div>
         </div>
+
         <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" >
             <div class="card h-100">
                 <img src="{{url_for ('static',filename='img/card2.jpg')}}" class="card-img-top" alt="" href="{{url_for('productos')}}" >
+
                 <div class="card-body">
                     <h5 class="card-title row justify-content-center"> Venta de semillas </h5>
                     <p class="card-text"> Tenemos gran variedad de semillas para todo tipo de ecosistemas, prestando un
@@ -136,8 +138,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4" >
-            <div class="card h-100">
+        <div class="col-sm-7 col-md-5 col-lg-3 m-sm-2 m-md-2 m-lg-4">
+            <div class="card h-100 d-block">
                 <img src="{{url_for ('static',filename='img/card3.jpg')}}" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title row justify-content-center ">Analisis de tierras</h5>
